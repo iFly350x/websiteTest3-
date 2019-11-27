@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header{
+	background: url(whoamiback2.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 1000px;
+}
+
+/*img{
+	margin-top: 150px;
+	display: flex;
+	}*/
+
+.main{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: cyan;
+	font-size: 50px;
+}
+
+.main{
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+#curosr2{
+	display: inline-block;
+	width: 3px;
+	background-color: cyan;
+	animation: blink 1s infinite;
+	margin-left: 0.2rem;
+}
+
+@keyframes blink {
+	0% {background-color: cyan; }
+	50% { background-color: transparent; }
+	100% {background-color: cyan}
+}
+

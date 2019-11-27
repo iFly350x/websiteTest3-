@@ -1,0 +1,163 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	
+	<script type="text/javascript">
+			$(document).ready(function(){
+		$('.materialboxed').materialbox()
+		  $('.dropdown-trigger').dropdown();
+});
+	</script>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous">
+<script src="{{ asset('js/materialize.min.js') }}"></script>
+
+</script>
+<!-- 
+<script type="text/javascript">
+	
+function notify_user(notifcation){
+	alert(notifcation)
+}
+notify_user("Hello There ! I would kindly ask you to disable your addblocker, as it is our only way of generating income. Thank You. Ahmed Negm")
+
+</script> -->
+
+<body>
+	<!-- headerNavBar -->
+	<header>
+		<nav id="bar" class="nav-wrapper transparent">
+			<div class="container">
+				<a href="" class="brand-logo">Ahmed <span id="logo" class="cyan-text text-darken-0">Negm</span></a>
+				<ul class="right">
+					<li><a class="z-depth-1" href="index.html">Home</a></li>
+					<li><a  class="dropdown-trigger " data-target="dropdown1" href="#">Problembs of E-waste</a>
+					<ul id="dropdown1" class="dropdown-content">
+						<li><a href="hazardous Materials .html">Hazardous Materials</a></li>
+						<li><a href="DevelopingCountries.html">E-Waste and Developing Countries</a></li>
+					</ul>
+					<li><a class="dropdown-trigger" data-target="dropdown2" href="#">Eliminating E-waste</a></li>
+					<ul id="dropdown2" class="dropdown-content">
+						<li><a href="socity.html">How Will It Benifit Socity</a></li>
+						<li><a href="How to eliminate.html">How To Eliminate it</a></li>
+					</ul>
+
+					<li><a href="" class="btn btn-floating pulse cyan"></a></li>
+							<li><a href="contact.htm" class="">Contact</a></li>
+				</ul>
+				<body onload="incrementCount(10)">
+				<div class="container section">
+					<div class="col">
+    <div class="main_container"  style="text-align:center; padding-top:310px;" id="id_main_container">
+    	<div class="center-align" style="font-size: 30px;" div="main2">Number of E-Waste Products </div>
+      <div class="container_inner"  style="font-size: 50px;" id="display_div_id">
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+	<div id="progress_text"   class="center-align">The Amount of E-Waste Recycled From Earth</div>
+		<p><progress id="progress" style="left: 360px;" class="center-align" value="20" max="100"></progress><p>
+
+  </section>
+
+<script>
+  var counter_list = [10,93621,6705];
+  var str_counter_0 = counter_list[0];
+  var str_counter_1 = counter_list[1];
+  var str_counter_2 = counter_list[2];
+  var display_str = "";
+  var display_div = document.getElementById("display_div_id");
+
+  function incrementCount(current_count){
+    setInterval(function(){
+      // clear count
+      while (display_div.hasChildNodes()) {
+          display_div.removeChild(display_div.lastChild);
+      }
+      str_counter_0++;
+      if (str_counter_0 > 99) {
+        str_counter_0 = 10; // reset count
+        str_counter_3++;    // increase next count
+      }
+      if(str_counter_1>99999){
+        str_counter_4++;
+      }
+      display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+      for (var i = 0; i < display_str.length; i++) {
+        var new_span = document.createElement('span');
+        new_span.className = 'num_tiles';
+        new_span.innerText = display_str[i];
+        display_div.appendChild(new_span);
+      }
+    },1000);
+  }
+</script>
+			</header>
+			</div>
+<!-- photo -->
+
+<section class="container section">
+	<div class="row">
+	<div class="col s14  l5">
+		<img src="coding1.webp" alt="coder" class="responsive-img materialboxed">
+	</div>
+	<div class="col s13 l5 offset-l1">
+		<h2 class="indigo-text text-darken-4"><span id="question1">What Is E-Waste?</span></h2>
+		<p">Whenever you buy a new electronic, how do you dispose of your old device? 
+		Your old device is referred to as an E-waste item.E-waste is a term that describes the disposal of internal and external parts of electronics. E-waste can include consumer electronics such as TV screens, laptops, and printers. E-waste can also include home appliances such as friedges, and stoves that are being disposed. 
+
+ </p>
+		
+	</div>
+</section> 
+<section class="container section ">
+	<div class="row">
+		<div class="col s14 l5 push-l7">
+		<img src="pic2.jpg" class="responsive-img materialboxed" alt="">
+	</div>
+	<div class="col s14 l6 offset-l1 pull-l6">
+		<h2 class="indigo-text text-darken-4">How Fast Is E-Waste Growing? <span class="cursor">&nbsp;</span>
+</h2>
+		<p>Currently E-waste is one of the biggest growing pollution in the world. This is due to the fact that users have an easy accessibility to purchasing new products. In addition, electronic manufacturers are currently producing very influential products at a very rapid rate, which leads consumers into purchasing new items and consequently increasing the E-waste emission. </p>
+	</div>
+</section>
+	
+
+
+</div>
+
+<section class="container section">
+	<div class="row">
+	<div class="col s14  l5">
+		<img src="coding1.webp" alt="coder" style="margin-top: 65px;" id="img3" class="responsive-img materialboxed">
+	</div>
+	<div class="col s13 l5 offset-l1">
+		<h2 class="indigo-text text-darken-4"><span id="question1">How much E-waste do our nations generate? </span></h2>
+		<p">The rates at which E-waste is being generated are detrimental. The United States alone produced 10 million tons of e-waste in 2012. The world discarded 49 million tons of E-waste in 2016, and that number is expected to exceed 60 million. Those statistics denote that on average, a person generates approximately 7 kg of E-waste per year. With the current speed that manufacturers are producing new electronics, it is expected to have a 33% percent increase in the emission of E-waste.
+
+ </p>
+		how do we produce e-waste
+
+	</div>
+
+		</nav>
+
+	</header>
+
+

@@ -1,0 +1,26 @@
+header{
+	background: url(backfinal.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 800px;
+}
+
+h2{
+	font-size: 35px;
+}
+
+p{
+	text-align: center;
+	padding-top: 10px;
+	border-width: 5px;
+}
+
+
+#container{
+	padding-top: 3px
+}
+
+
+
+
+

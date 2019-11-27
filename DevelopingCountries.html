@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="countries.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  
+  <script type="text/javascript">
+      $(document).ready(function(){
+    $('.materialboxed').materialbox()
+      $('.dropdown-trigger').dropdown();
+});
+  </script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous">
+<script src="{{ asset('js/materialize.min.js') }}"></script>
+
+</script>
+
+<body>
+  <!-- headerNavBar -->
+  <header>
+    <nav id="bar" class="nav-wrapper transparent">
+      <div class="container">
+        <a href="" class="brand-logo">Ahmed <span id="logo" class="cyan-text text-darken-0">Negm</span></a>
+        <ul class="right">
+          <li><a class="z-depth-1" href="index.html">Home</a></li>
+          <li><a  class="dropdown-trigger " data-target="dropdown1" href="#">Problembs of E-waste</a>
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="hazardous Materials .html">Hazardous Materials</a></li>
+            <li><a href="DevelopingCountries.html">E-Waste and Developing Countries</a></li>
+          </ul>
+          <li><a class="dropdown-trigger" data-target="dropdown2" href="#">Eliminating E-waste</a></li>
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a href="socity.html">How Will It Benifit Socity</a></li>
+            <li><a href="How to eliminate.html">How To Eliminate it</a></li>
+          </ul>
+
+          <li><a href="" class="btn btn-floating pulse cyan"></a></li>
+              <li><a href="contact.htm" class="">Contact</a></li>
+</li>
+</ul>
+</div>
+</nav>
+<body onload="incrementCount(10)">
+        <div class="container section">
+          <div class="col">
+<div class="main_container"  style="text-align:center; padding-top:310px;" id="id_main_container">
+  <h3 class="align-center">The Amount Of Tons of E-Waste Sent To Africa </h3>
+<div class="container_inner"  style="font-size: 50px;" id="display_div_id"></div>
+
+<script>
+  var counter_list = [10,4861,72];
+  var str_counter_0 = counter_list[0];
+  var str_counter_1 = counter_list[1];
+  var str_counter_2 = counter_list[2];
+  var display_str = "";
+  var display_div = document.getElementById("display_div_id");
+
+  function incrementCount(current_count){
+    setInterval(function(){
+      // clear count
+      while (display_div.hasChildNodes()) {
+          display_div.removeChild(display_div.lastChild);
+      }
+      str_counter_0++;
+      if (str_counter_0 > 99) {
+        str_counter_0 = 10; // reset count
+        str_counter_3++;    // increase next count
+      }
+      if(str_counter_1>99999){
+        str_counter_4++;
+      }
+      display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+      for (var i = 0; i < display_str.length; i++) {
+        var new_span = document.createElement('span');
+        new_span.className = 'num_tiles';
+        new_span.innerText = display_str[i];
+        display_div.appendChild(new_span);
+      }
+    },1000);
+  }
+</script>
+</div>
+</div>
+</div>
+</header>
+
+
+<section class="container section ">
+  <div class="row">
+    <div class="col s14 l5 push-l7">
+    <img src="pic2.jpg" class="responsive-img materialboxed" alt="">
+  </div>
+  <div class="col s14 l6 offset-l1 pull-l6">
+    <h2 class="indigo-text text-darken-4">Where Does E-Waste Go?<span class="cursor">&nbsp;</span>
+</h2>
+    <p>One question you may be asking is about whether E-Waste gets shipped to developing countries. The answer to this question is yes. E-waste gets shipped to poor countries such as India, and Ghana. According to a report published by the United Nations, there are around 50 million tons of E-waste being shipped to countries each year. Only poor workers work in the E-waste industry , and they never take health precautions such as wearing masks. Children also contribute in the workforce. 
+</p>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="row">
+  <div class="col s14  l5">
+    <img src="coding1.webp" alt="coder" class="responsive-img materialboxed">
+  </div>
+  <div class="col s13 l5 offset-l1">
+    <h2 class="indigo-text text-darken-4"><span id="question1">How Is E-Waste Affecting Ghana</span></h2>
+    <p">Ghana is the world’s largest electronic waste dump. Ghana is also one of the poorest countries in the world. According to a 2011 study, the country of Ghana imports around 150,000 tons of electronic waste each year (Yeung).  It has been reported that Ghana’s atmosphere is filled up with acidic gusts of smoke, due to interactions with the internal components of the electronics. 
+ </p>
+</p">
+</div>
+</div>
+</section>
+
+
+ <section class="container section">
+  <div class="row">
+  <div class="col s14  l5">
+    <img src="coding1.webp" alt="coder" class="responsive-img materialboxed">
+  </div>
+  <div class="col s13 l5 offset-l1">
+    <h2 class="indigo-text text-darken-4"><span id="question1">Workers</span></h2>
+    <p">In Ghana, there are approximately 80,000 humans working in the electronic waste industry. This number composes of men, women, and very young children children. Those workers are forced into working in detrimental working conditions due to their financial demands. Those workers are forced into practicing informal recycling producers. Most of the time, the electronic components are burned which causes numerous repository problems. 
+
+ </p>
+</p">
+</div>
+</div>
+</section>
+
+<section class="container section ">
+  <div class="row">
+    <div class="col s14 l5 push-l7">
+    <img src="pic2.jpg" class="responsive-img materialboxed" alt="">
+  </div>
+  <div class="col s14 l6 offset-l1 pull-l6">
+    <h2 class="indigo-text text-darken-4">life conditions<span class="cursor">&nbsp;</span>
+</h2>
+    <p>The lives of the workers who work in the electronic waste dumps are filled with poverty. It has been reported that most of the workers do not have homes, and are forced into making shelters out of scrap. Abdrahaman Daouda- a worker in the electronic waste reports that he earns no more than $7.50 cedis a day, and he also reports that sometimes the air becomes very difficult to breathe(Yeung). In addition, it is very common for people to die at age 20 in Ghana due to the extreme levels of pollution caused by electronic waste. It is also important to note that the workers are unable to take any health precautions to protect their health against the severe pollution. 
+</p>
+  </div>
+</section>

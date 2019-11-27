@@ -1,0 +1,64 @@
+/*background*/
+header{ 
+	background: url(background.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 1000px;
+}
+/*background-screen-acomidation*/
+@media screen and (max-width: 670px){
+	header{
+		min-height: 500px;
+	}
+}
+
+/*question 1*/
+/*#question1{
+	font-size: 15px;
+}*/
+
+#logo{
+
+}
+
+/*animation cursor*/
+.cursor{
+	display: inline-block;
+	width: 3px;
+	background-color: #212121;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {background-color: #212121; }
+	50% { background-color: transparent; }
+	100% {background-color: #212121}
+}
+
+#icon2{
+margin: 0px auto;
+}
+
+
+#progress{
+
+position: relative;
+margin-top: 25px;
+padding-top: 25px;
+width: 170px;
+
+ }
+
+#progress_text{
+
+  position: relative;
+  font-size: 25px;
+}
+
+#img2{
+	padding-top: 65px;
+}
+
+#main2{
+	font-size: 30px;
+}
